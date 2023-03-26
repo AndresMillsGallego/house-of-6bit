@@ -1,0 +1,32 @@
+#records-div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+  margin: auto;
+}
+
+.records,
+.record-playing {
+  width: 7.5rem;
+}
+
+.records:hover,
+.record-playing:hover {
+  cursor: pointer;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.record-playing {
+  animation: rotate 1.5s linear infinite;
+}
+
+#record {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
